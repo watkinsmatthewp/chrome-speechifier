@@ -1,0 +1,19 @@
+{
+   "content_scripts": [ 
+		{ 
+			"matches": ["<all_urls>"], 
+			"exclude_matches" : ["*://www.google.com/*"],
+			"all_frames": true,
+			"js": [ "speechifier.js" ] 
+		} ],
+   "description": "Speechifier is a simple, silent Chrome extension that makes every text box a voice input box. Using this extension you can talk to your browser and have it type the words you say on the page",
+   "icons": { 
+		"16" : "Content/Icon/16.png",
+		"48" : "Content/Icon/48.png",
+		"128" : "Content/Icon/128.png"
+	},
+   "name": "Speechifier",
+   "permissions": [ "tabs" ],
+   "version": "0.1",
+   "manifest_version": 2
+}
